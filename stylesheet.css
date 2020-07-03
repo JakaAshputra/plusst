@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin:0;
   font-family: "lucida Grande";
@@ -9,6 +13,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.clear {
+  clear: left;
 }
 
 .container {
@@ -51,7 +59,9 @@ header {
 
 .btn {
   transition: all 0.5s;
-  display: block;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .btn:hover {
@@ -123,7 +133,7 @@ header {
 
 .lesson-icon p {
   position: absolute;
-  top: 44%;
+  top: 38%;
   width: 100%;
   color: white;
 }
@@ -145,6 +155,7 @@ header {
 }
 
 .message-wrapper {
+  padding-top: 80px;
   border-bottom: 1px solid #eee;
   text-align: center;
   width:100%;
@@ -153,6 +164,7 @@ header {
 .footer-logo {
   width: 125px;
   font-size: 25px;
+  text-align: left;
   color:rgba(34, 49, 52);
 }
 
@@ -168,6 +180,15 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: rgba();
   float: left;
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display:none;
 }
